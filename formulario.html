@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<style>
+	
+		@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap');
+		
+		@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Red+Hat+Display:ital,wght@1,300&display=swap');
+
+		h1, h2{
+			font-family:'nunito',sans-serif;
+		}
+		
+	</style> 
+	<style>
+		* {
+			font-family:'cinzel',sans-serif;
+		}
+		html, body{
+			scroll-behavior: smooth;
+		}
+		
+		body{
+			margin:0;
+			padding:0;
+			box-sizing: border-box;	
+		}
+
+		.navbar {
+			display: flex;
+			justify-content: space-between; 
+			align-items: center;
+			padding: 10px 5%;
+			background:white;
+			width:90%;
+		}
+
+		.logo {
+			margin-:30px 0; 	
+			width:90px;
+		}
+		
+		.menu-icon{
+			width:45px;
+			display:none;
+		}
+		
+		nav{
+			flex:1;
+			text-align:right;
+		}
+
+		nav ul li{
+			list-style:none;
+			display:inline-block;
+			margin-right: 30px;
+		}
+		
+		nav ul li a{
+			text-decoration:none;
+			color: midnightblue;
+			font-size:20px;
+		}
+		
+		nav ul li a:hover{
+			color: #0099ff;
+			letter-spacing: 1px;
+		}
+		
+		form{
+			
+		}
+		
+		h1, p{
+			text-align:center;
+		}
+		
+		.formulario{
+			width: 80%;
+			padding: 50px;
+			margin: 10px;
+			text-align: center;
+			background:#0099ff;
+			
+			font-size:18px;
+		}
+		
+		.formulario button{
+			font-size:18px;
+			width:180px;
+			height:45px;
+			border-radius: 15px;
+			display:inline-block;
+			text-decoration:none;
+			background: lightskyblue;		
+			padding: 10px 20px;
+			border:none;
+		}
+		
+		.formulario button:hover{
+			letter-spacing: 1px;
+			opacity:0.75;
+		}
+		
+		input, button {
+			border-radius: 3px;
+		}
+		
+		textarea{
+			border-radius: 5px;
+		}
+		
+		.campo{
+			margin-bottom: 1em;
+		}
+		
+		.campo label{
+			margin-bottom: 0.2em;
+		}
+		
+		.campo input, .campo textarea{
+			padding: 0.2 em;
+			border: 1px solid blue;
+			box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+			
+		}
+		
+		.campo input:focus, .campo textarea:focus{
+			background: lightskyblue;
+		}
+		
+		.curva{
+			position:relative;
+			bottom:0;
+			margin-bottom:-8px;
+			width:100%;
+		}
+		
+		@media (max-width: 900px){
+			.banner {
+				height:300px;
+			}
+		
+		}
+		
+		@media (max-width:600px){
+			.banner a{
+				margin-bottom:10px;
+			}
+		
+			.banner {
+				height:350px;
+			}
+			
+			nav ul{
+				width:60%;
+				background:lightskyblue;
+				position:absolute;
+				top:75px;
+				right:0;
+				z-index:2;		
+			}	
+			
+			nav ul li{
+				display:block;
+				margin-top:10px;
+				margin-bottom:10px;
+			}
+			
+			nav ul li a{
+				color: blue;
+			}
+			
+			.menu-icon{
+				display:block;
+			}
+			
+			#menuList{
+				overflow:hidden;
+				transition:0.5s;
+			}
+		}		
+	</style>
+
+
+
+<head>
+<title> GEAPSC</title>
+
+<link rel =""
+</head>
+
+<body>
+	<div class="navbar">
+				<img class="logo" src="logo.png">
+				<nav>
+					<ul id="menuList">
+						<li> <a href="#inicio">Início </a></li>
+			
+					</ul>
+				</nav>	
+				<img class="menu-icon" src="menu.png"
+				onclick="togglemenu()">
+			</div>
+			
+			
+			
+	<div class="formulario">
+	
+		<h1> Contato </h1>
+	
+		<hr width="70%" color="white" >	
+	
+		<p> Preencha seus dados </p>
+	
+	
+	<form class="form" method="POST" action="./email.php">
+		
+		<div class="campo">
+			<label> Nome </label> <br/>
+			<input type="text" name="nome" id="nome">
+		</div>
+		
+			<br/>
+			
+		<div class="campo">
+			<label> E-mail </label> <br/>
+			<input type="email" name="email" id="email">
+		</div>
+		
+			<br/>
+			
+		<div class="campo">
+			<label> Telefone/ Celular </label> <br/>
+			<input type="tel" name="telefone" id="telefone">
+		</div>
+		
+			<br/>
+		
+		<div class="campo">
+			<label> Mensagem </label> <br/>
+			<textarea type="email" name="mensagem" id="mensagem"
+			cols="40" rows="7" placeholder = "Escreva aqui sua mensagem..."
+			>
+			
+			</textarea>
+		</div>
+		
+			<br/>
+		
+		<div class="campo">
+			<button type="submit"> Enviar </button>
+		</div>
+		
+	
+	</form>
+	</div>
+
+
+
+
+
+</body>
+
+</html>
