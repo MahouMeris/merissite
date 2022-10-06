@@ -7,7 +7,7 @@ $email = addlashes($_POST['email']);
 $telefone = addlashes($_POST['telefone']);
 $mensagem = addlashes($_POST['mensagem']);
 
-$to = "fukuoka.melissa@yahoo.com";
+$to = "meris_siren@outlook.com";
 $subject = "Contato via site";
 $body = "Nome: " .$nome. "\r\n" .
 		"E-mail:" .$email. "\r\n" .
