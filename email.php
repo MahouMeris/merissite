@@ -2,10 +2,10 @@
 
 if( isset($_POST['email']) && !empty($_POST['email']) )
 
-$nome = addlashes($_POST['name']);
-$email = addlashes($_POST['email']);
-$telefone = addlashes($_POST['telefone']);
-$mensagem = addlashes($_POST['mensagem']);
+$nome = addslashes($_POST['name']);
+$email = addslashes($_POST['email']);
+$telefone = addslashes($_POST['telefone']);
+$mensagem = addslashes($_POST['mensagem']);
 
 $to = "meris_siren@outlook.com";
 $subject = "Contato via site";
